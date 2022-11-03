@@ -16,8 +16,7 @@ void main() {
     }
     // Идёт проверка, достаточно ли денежных средств в банкомате
     // и есть ли купюры нужного номинала
-    if ((giveOut <= balanceATM) &&
-        (giveOut % allMoney[allMoney.length - 1].value) == 0) {
+    if ((giveOut <= balanceATM) && (giveOut % allMoney[allMoney.length - 1].value) == 0) {
       do {
         // Проверяем, есть ли купюры определенного номинала
         if (allMoney[index].count > 0) {
